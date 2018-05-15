@@ -23,7 +23,7 @@ public class CustomerController {
 	
 	@GetMapping("/list")
 	public String listCustomer(Model model) {
-		System.out.println("he git change");
+		
 		List<Customer> customers = customerService.getCustomers();
 		
 		model.addAttribute("customers", customers);
